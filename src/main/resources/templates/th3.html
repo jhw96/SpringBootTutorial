@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>thymeleaf3</title>
+		<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}" ></script>
 		</head>
 	<body>
 		<table border="1">
@@ -17,5 +18,8 @@
 				<td th:text="${prod.price}" />
 			</tr>
 		</table>
+		<script type="text/javascript">
+			console.log($.fn.jquery);
+		</script>
 	</body>
 </html>
