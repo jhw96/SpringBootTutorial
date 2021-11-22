@@ -13,5 +13,6 @@
 		</div>
 		<div th:if="${product.price} > 3000" th:text="비싸다" />
 		<div th:if="${product.price} > 1500" th:text="적당하다" />
+		<div th:unless="${product.price} > 3000" th:text="비싸다" />
 	</body>
 </html>
